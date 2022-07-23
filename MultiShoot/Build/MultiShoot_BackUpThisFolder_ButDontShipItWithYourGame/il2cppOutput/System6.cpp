@@ -443,8 +443,6 @@ struct Dictionary_2_t94DF7D57A0FF045929FE85E29881A95D7B508301;
 struct Dictionary_2_t29257EB2565DDF3180663167EF129FA9827836C5;
 // System.Collections.Generic.Dictionary`2<System.String,System.Tuple`2<System.Guid,System.String>>
 struct Dictionary_2_t793091DA1462753E144A0B0F7DF3EE7D79B61D30;
-// System.Collections.Generic.List`1<System.Security.Cryptography.X509Certificates.X509ChainStatus>
-struct List_1_tC12B69E9430500C9BFF5B4B3D9F51DEE87A9D4C6;
 // System.Collections.Generic.List`1<System.WeakReference>
 struct List_1_t5D5EB1A9048F1180561855E6150AA537292D77C4;
 // System.ArgumentException
@@ -1052,7 +1050,6 @@ IL2CPP_EXTERN_C const uint32_t UnityTlsContext__ctor_mC0C9DB6F5662F4076B3C4B2144
 IL2CPP_EXTERN_C const uint32_t UnityTlsConversions_GetMaxProtocol_mAC1B84A7E2515C284F4D3C2AE0C2702557F40CA3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnityTlsConversions_GetMinProtocol_mC098F43CCD8DF9A77BFD69D3D9D5F569204B04F3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnityTlsConversions_VerifyResultToAlertDescription_m78E79C1E3C062E64EB36CFC6280AB67A7EF12089_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t UnityTlsConversions_VerifyResultToChainStatus_mFDA2FD248854061D2C8009E4A46294C9810D90FD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnityTlsConversions_VerifyResultToPolicyErrror_m60E61EFD192DCDA65BBE1A1356A102B7E8BCE655_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnityTlsProvider_CreateSslStreamInternal_mF1D7EA59B6FD86A48A26BB32EDC4FFE6E3E6E348_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnityTlsProvider_ValidateCertificate_mA8A956114D6DA3186D05C8C19CB7032612199332_MetadataUsageId;
@@ -5726,8 +5723,6 @@ public:
 	unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D  ___nativeCertificateChain_1;
 	// System.Security.Cryptography.X509Certificates.X509ChainPolicy Mono.Unity.X509ChainImplUnityTls::policy
 	X509ChainPolicy_tA848C617FAE235C50D3937F79C76FF0713BFE88F * ___policy_2;
-	// System.Collections.Generic.List`1<System.Security.Cryptography.X509Certificates.X509ChainStatus> Mono.Unity.X509ChainImplUnityTls::chainStatusList
-	List_1_tC12B69E9430500C9BFF5B4B3D9F51DEE87A9D4C6 * ___chainStatusList_3;
 
 public:
 	inline static int32_t get_offset_of_elements_0() { return static_cast<int32_t>(offsetof(X509ChainImplUnityTls_tC85C612CC6FA2FD60E478BBD173F071F66E46456, ___elements_0)); }
@@ -5754,15 +5749,6 @@ public:
 	{
 		___policy_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___policy_2), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_chainStatusList_3() { return static_cast<int32_t>(offsetof(X509ChainImplUnityTls_tC85C612CC6FA2FD60E478BBD173F071F66E46456, ___chainStatusList_3)); }
-	inline List_1_tC12B69E9430500C9BFF5B4B3D9F51DEE87A9D4C6 * get_chainStatusList_3() const { return ___chainStatusList_3; }
-	inline List_1_tC12B69E9430500C9BFF5B4B3D9F51DEE87A9D4C6 ** get_address_of_chainStatusList_3() { return &___chainStatusList_3; }
-	inline void set_chainStatusList_3(List_1_tC12B69E9430500C9BFF5B4B3D9F51DEE87A9D4C6 * value)
-	{
-		___chainStatusList_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___chainStatusList_3), (void*)value);
 	}
 };
 
@@ -7255,24 +7241,6 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SslProtocols_tF8B65D359D2670DCDA2BDF3677A9E7217FC3DA68, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
-struct  X509ChainStatusFlags_t16F457BB24891840519B66C39DE91268909174F9 
-{
-public:
-	// System.Int32 System.Security.Cryptography.X509Certificates.X509ChainStatusFlags::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(X509ChainStatusFlags_t16F457BB24891840519B66C39DE91268909174F9, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -11730,10 +11698,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_x509verify_explicit_ca_t_In
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_x509verify_default_ca_t_Invoke_m22C2DE021D3D750655FFEF54BE2B030596F1A82E (unitytls_x509verify_default_ca_t_tA14966CBF65E11A062006DBEEC9E89D4A5DAAC97 * __this, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D  ___chain0, uint8_t* ___cn1, intptr_t ___cnLen2, unitytls_x509verify_callback_tFB7A5A2C48B19A81F927615C45B50BDFEB68A00C * ___cb3, void* ___userData4, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState5, const RuntimeMethod* method);
 // Mono.Security.Interface.MonoSslPolicyErrors Mono.Unity.UnityTlsConversions::VerifyResultToPolicyErrror(Mono.Unity.UnityTls/unitytls_x509verify_result)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityTlsConversions_VerifyResultToPolicyErrror_m60E61EFD192DCDA65BBE1A1356A102B7E8BCE655 (uint32_t ___verifyResult0, const RuntimeMethod* method);
-// System.Security.Cryptography.X509Certificates.X509ChainStatusFlags Mono.Unity.UnityTlsConversions::VerifyResultToChainStatus(Mono.Unity.UnityTls/unitytls_x509verify_result)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityTlsConversions_VerifyResultToChainStatus_mFDA2FD248854061D2C8009E4A46294C9810D90FD (uint32_t ___verifyResult0, const RuntimeMethod* method);
-// System.Void Mono.Unity.X509ChainImplUnityTls::AddStatus(System.Security.Cryptography.X509Certificates.X509ChainStatusFlags)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509ChainImplUnityTls_AddStatus_m9B56480F6C492FED2C59E8A5AAAA30B74F061E10 (X509ChainImplUnityTls_tC85C612CC6FA2FD60E478BBD173F071F66E46456 * __this, int32_t ___errorCode0, const RuntimeMethod* method);
 // System.Void Mono.Security.Interface.MonoTlsProvider::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoTlsProvider__ctor_m158F98FFC13985AEA169D93B13728FE5018B4352 (MonoTlsProvider_tBE72637BEDBD1516A1BC30D94F7159B7289CF0D7 * __this, const RuntimeMethod* method);
 // System.Void Mono.Net.Security.MobileAuthenticatedStream::.ctor(System.IO.Stream,System.Boolean,System.Net.Security.SslStream,Mono.Security.Interface.MonoTlsSettings,Mono.Security.Interface.MonoTlsProvider)
@@ -25807,122 +25771,6 @@ IL_002c:
 		return L_11;
 	}
 }
-// System.Security.Cryptography.X509Certificates.X509ChainStatusFlags Mono.Unity.UnityTlsConversions::VerifyResultToChainStatus(Mono.Unity.UnityTls_unitytls_x509verify_result)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityTlsConversions_VerifyResultToChainStatus_mFDA2FD248854061D2C8009E4A46294C9810D90FD (uint32_t ___verifyResult0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (UnityTlsConversions_VerifyResultToChainStatus_mFDA2FD248854061D2C8009E4A46294C9810D90FD_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		uint32_t L_0 = ___verifyResult0;
-		if (L_0)
-		{
-			goto IL_0005;
-		}
-	}
-	{
-		return (int32_t)(0);
-	}
-
-IL_0005:
-	{
-		uint32_t L_1 = ___verifyResult0;
-		if ((!(((uint32_t)L_1) == ((uint32_t)(-1)))))
-		{
-			goto IL_000c;
-		}
-	}
-	{
-		return (int32_t)(((int32_t)32));
-	}
-
-IL_000c:
-	{
-		V_0 = 0;
-		uint32_t L_2 = ___verifyResult0;
-		uint32_t L_3 = L_2;
-		RuntimeObject * L_4 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_3);
-		uint32_t L_5 = ((uint32_t)1);
-		RuntimeObject * L_6 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_5);
-		NullCheck((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_4);
-		bool L_7 = Enum_HasFlag_mF1BCDA3744B0CC82C7A3D7313C0858E82010151E((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_4, (Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_6, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		int32_t L_8 = V_0;
-		V_0 = ((int32_t)((int32_t)L_8|(int32_t)1));
-	}
-
-IL_0025:
-	{
-		uint32_t L_9 = ___verifyResult0;
-		uint32_t L_10 = L_9;
-		RuntimeObject * L_11 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_10);
-		uint32_t L_12 = ((uint32_t)2);
-		RuntimeObject * L_13 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_12);
-		NullCheck((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_11);
-		bool L_14 = Enum_HasFlag_mF1BCDA3744B0CC82C7A3D7313C0858E82010151E((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_11, (Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_13, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_003c;
-		}
-	}
-	{
-		int32_t L_15 = V_0;
-		V_0 = ((int32_t)((int32_t)L_15|(int32_t)4));
-	}
-
-IL_003c:
-	{
-		uint32_t L_16 = ___verifyResult0;
-		uint32_t L_17 = L_16;
-		RuntimeObject * L_18 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_17);
-		uint32_t L_19 = ((uint32_t)4);
-		RuntimeObject * L_20 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_19);
-		NullCheck((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_18);
-		bool L_21 = Enum_HasFlag_mF1BCDA3744B0CC82C7A3D7313C0858E82010151E((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_18, (Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_20, /*hidden argument*/NULL);
-		if (!L_21)
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		int32_t L_22 = V_0;
-		V_0 = ((int32_t)((int32_t)L_22|(int32_t)((int32_t)32)));
-	}
-
-IL_0054:
-	{
-		uint32_t L_23 = ___verifyResult0;
-		uint32_t L_24 = L_23;
-		RuntimeObject * L_25 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_24);
-		uint32_t L_26 = ((uint32_t)8);
-		RuntimeObject * L_27 = Box(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84_il2cpp_TypeInfo_var, &L_26);
-		NullCheck((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_25);
-		bool L_28 = Enum_HasFlag_mF1BCDA3744B0CC82C7A3D7313C0858E82010151E((Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_25, (Enum_t23B90B40F60E677A8025267341651C94AE079CDA *)L_27, /*hidden argument*/NULL);
-		if (!L_28)
-		{
-			goto IL_006c;
-		}
-	}
-	{
-		int32_t L_29 = V_0;
-		V_0 = ((int32_t)((int32_t)L_29|(int32_t)((int32_t)32)));
-	}
-
-IL_006c:
-	{
-		int32_t L_30 = V_0;
-		return L_30;
-	}
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -26461,35 +26309,19 @@ IL_0200:
 		uint32_t L_96 = V_2;
 		int32_t L_97 = UnityTlsConversions_VerifyResultToPolicyErrror_m60E61EFD192DCDA65BBE1A1356A102B7E8BCE655(L_96, /*hidden argument*/NULL);
 		*((int32_t*)L_95) = (int32_t)L_97;
-		X509ChainImplUnityTls_tC85C612CC6FA2FD60E478BBD173F071F66E46456 * L_98 = V_1;
-		if (!L_98)
+		uint32_t L_98 = V_2;
+		if (L_98)
 		{
-			goto IL_0218;
+			goto IL_0216;
 		}
 	}
 	{
-		X509ChainImplUnityTls_tC85C612CC6FA2FD60E478BBD173F071F66E46456 * L_99 = V_1;
-		uint32_t L_100 = V_2;
-		int32_t L_101 = UnityTlsConversions_VerifyResultToChainStatus_mFDA2FD248854061D2C8009E4A46294C9810D90FD(L_100, /*hidden argument*/NULL);
-		NullCheck(L_99);
-		X509ChainImplUnityTls_AddStatus_m9B56480F6C492FED2C59E8A5AAAA30B74F061E10(L_99, L_101, /*hidden argument*/NULL);
+		unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499  L_99 = V_0;
+		uint32_t L_100 = L_99.get_code_1();
+		return (bool)((((int32_t)L_100) == ((int32_t)0))? 1 : 0);
 	}
 
-IL_0218:
-	{
-		uint32_t L_102 = V_2;
-		if (L_102)
-		{
-			goto IL_0225;
-		}
-	}
-	{
-		unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499  L_103 = V_0;
-		uint32_t L_104 = L_103.get_code_1();
-		return (bool)((((int32_t)L_104) == ((int32_t)0))? 1 : 0);
-	}
-
-IL_0225:
+IL_0216:
 	{
 		return (bool)0;
 	}

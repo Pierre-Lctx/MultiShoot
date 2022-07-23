@@ -24481,7 +24481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callback_Invoke_m5CF1B13973F36016D5A95A1
 		else if (___parameterCount != 3)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -24505,16 +24505,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callback_Invoke_m5CF1B13973F36016D5A95A1
 					typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___timeNoticed1) - 1), ___context2, targetMethod);
 				}
-				typedef void (*FunctionPointerType) (Timer_t4921D0FD531C804B41361C9BBF5D197D751EB323 *, int32_t, RuntimeObject *, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___timer0, ___timeNoticed1, ___context2, targetMethod);
+				else
+				{
+					typedef void (*FunctionPointerType) (Timer_t4921D0FD531C804B41361C9BBF5D197D751EB323 *, int32_t, RuntimeObject *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___timer0, ___timeNoticed1, ___context2, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (Timer_t4921D0FD531C804B41361C9BBF5D197D751EB323 *, int32_t, RuntimeObject *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___timer0, ___timeNoticed1, ___context2, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker3< Timer_t4921D0FD531C804B41361C9BBF5D197D751EB323 *, int32_t, RuntimeObject * >::Invoke(targetMethod, targetThis, ___timer0, ___timeNoticed1, ___context2);
@@ -24535,11 +24543,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callback_Invoke_m5CF1B13973F36016D5A95A1
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, RuntimeObject *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___timer0) - 1), ___timeNoticed1, ___context2, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (Timer_t4921D0FD531C804B41361C9BBF5D197D751EB323 *, int32_t, RuntimeObject *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___timer0, ___timeNoticed1, ___context2, targetMethod);
 				}
 				else
 				{
@@ -26768,9 +26771,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void unitytls_tlsctx_certificate_callback_Inv
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 *, intptr_t, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D *, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 *, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___userData0, ___ctx1, ___cn2, ___cnLen3, ___caList4, ___caListLen5, ___chain6, ___key7, ___errorState8, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker9< void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 *, intptr_t, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D *, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 *, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * >::Invoke(targetMethod, targetThis, ___userData0, ___ctx1, ___cn2, ___cnLen3, ___caList4, ___caListLen5, ___chain6, ___key7, ___errorState8);
@@ -26791,11 +26799,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void unitytls_tlsctx_certificate_callback_Inv
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 *, intptr_t, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D *, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 *, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___ctx1, ___cn2, ___cnLen3, ___caList4, ___caListLen5, ___chain6, ___key7, ___errorState8, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 *, intptr_t, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D *, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 *, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___userData0, ___ctx1, ___cn2, ___cnLen3, ___caList4, ___caListLen5, ___chain6, ___key7, ___errorState8, targetMethod);
 				}
 				else
 				{
@@ -26914,9 +26917,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t unitytls_tlsctx_read_callback_Invoke
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef intptr_t (*FunctionPointerType) (void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___buffer1, ___bufferLen2, ___errorState3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker4< intptr_t, void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * >::Invoke(targetMethod, targetThis, ___userData0, ___buffer1, ___bufferLen2, ___errorState3);
@@ -26937,11 +26945,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t unitytls_tlsctx_read_callback_Invoke
 				{
 					typedef intptr_t (*FunctionPointerType) (RuntimeObject*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___buffer1, ___bufferLen2, ___errorState3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef intptr_t (*FunctionPointerType) (void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___buffer1, ___bufferLen2, ___errorState3, targetMethod);
 				}
 				else
 				{
@@ -27046,9 +27049,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void unitytls_tlsctx_trace_callback_Invoke_m9
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___userData0, ___ctx1, ___traceMessage2, ___traceMessageLen3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker4< void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t >::Invoke(targetMethod, targetThis, ___userData0, ___ctx1, ___traceMessage2, ___traceMessageLen3);
@@ -27069,11 +27077,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void unitytls_tlsctx_trace_callback_Invoke_m9
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___ctx1, ___traceMessage2, ___traceMessageLen3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (void*, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA *, uint8_t*, intptr_t, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___userData0, ___ctx1, ___traceMessage2, ___traceMessageLen3, targetMethod);
 				}
 				else
 				{
@@ -27179,9 +27182,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t unitytls_tlsctx_write_callback_Invok
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef intptr_t (*FunctionPointerType) (void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___data1, ___bufferLen2, ___errorState3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker4< intptr_t, void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * >::Invoke(targetMethod, targetThis, ___userData0, ___data1, ___bufferLen2, ___errorState3);
@@ -27202,11 +27210,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t unitytls_tlsctx_write_callback_Invok
 				{
 					typedef intptr_t (*FunctionPointerType) (RuntimeObject*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___data1, ___bufferLen2, ___errorState3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef intptr_t (*FunctionPointerType) (void*, uint8_t*, intptr_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___data1, ___bufferLen2, ___errorState3, targetMethod);
 				}
 				else
 				{
@@ -27313,9 +27316,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_tlsctx_x509verify_callback_
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef uint32_t (*FunctionPointerType) (void*, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D , unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___chain1, ___errorState2, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker3< uint32_t, void*, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D , unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * >::Invoke(targetMethod, targetThis, ___userData0, ___chain1, ___errorState2);
@@ -27336,11 +27344,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_tlsctx_x509verify_callback_
 				{
 					typedef uint32_t (*FunctionPointerType) (RuntimeObject*, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D , unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___chain1, ___errorState2, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef uint32_t (*FunctionPointerType) (void*, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D , unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___chain1, ___errorState2, targetMethod);
 				}
 				else
 				{
@@ -27478,9 +27481,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_x509verify_callback_Invoke_
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef uint32_t (*FunctionPointerType) (void*, unitytls_x509_ref_t4B933FE1711F247F993EE07326F67B7DFFD7DAA5 , uint32_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___cert1, ___result2, ___errorState3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker4< uint32_t, void*, unitytls_x509_ref_t4B933FE1711F247F993EE07326F67B7DFFD7DAA5 , uint32_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * >::Invoke(targetMethod, targetThis, ___userData0, ___cert1, ___result2, ___errorState3);
@@ -27501,11 +27509,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t unitytls_x509verify_callback_Invoke_
 				{
 					typedef uint32_t (*FunctionPointerType) (RuntimeObject*, unitytls_x509_ref_t4B933FE1711F247F993EE07326F67B7DFFD7DAA5 , uint32_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___userData0) - 1), ___cert1, ___result2, ___errorState3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef uint32_t (*FunctionPointerType) (void*, unitytls_x509_ref_t4B933FE1711F247F993EE07326F67B7DFFD7DAA5 , uint32_t, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___userData0, ___cert1, ___result2, ___errorState3, targetMethod);
 				}
 				else
 				{

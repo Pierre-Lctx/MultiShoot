@@ -21131,7 +21131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefreshEventHandler_Invoke_m9CA734910EB3
 		else if (___parameterCount != 1)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -21157,9 +21157,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefreshEventHandler_Invoke_m9CA734910EB3
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (RefreshEventArgs_t50158D63966C6B2EB2F520C892B226F2667FA273 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___e0, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker1< RefreshEventArgs_t50158D63966C6B2EB2F520C892B226F2667FA273 * >::Invoke(targetMethod, targetThis, ___e0);
@@ -21180,11 +21185,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefreshEventHandler_Invoke_m9CA734910EB3
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___e0) - 1), targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (RefreshEventArgs_t50158D63966C6B2EB2F520C892B226F2667FA273 *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___e0, targetMethod);
 				}
 				else
 				{

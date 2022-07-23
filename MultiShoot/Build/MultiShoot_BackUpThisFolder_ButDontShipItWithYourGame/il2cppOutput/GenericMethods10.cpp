@@ -190,8 +190,6 @@ struct Task_1_t65FD5EE287B61746F015BBC8E90A97D38D258FB3;
 struct Task_1_tED731EAB7D7EFFDDCCF3DBB2843566C8B0A5C581;
 // System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Int32,System.Int32>>
 struct Task_1_tB6E0730C54CFC03F4471315756CF85D05B71C05F;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int32,System.Int64>
-struct Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A;
 // System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int32,System.IntPtr>
 struct Transformer_1_tF4E5AD75B7C97D1E146A64FE337106FD89C6F9A1;
 // System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int32,System.Object>
@@ -763,32 +761,6 @@ public:
 	inline Transformer_1_t93586EBFA51523F443E1EC8D4A94AE26E174F019 * get_Instance_0() const { return ___Instance_0; }
 	inline Transformer_1_t93586EBFA51523F443E1EC8D4A94AE26E174F019 ** get_address_of_Instance_0() { return &___Instance_0; }
 	inline void set_Instance_0(Transformer_1_t93586EBFA51523F443E1EC8D4A94AE26E174F019 * value)
-	{
-		___Instance_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Instance_0), (void*)value);
-	}
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Caster`1<System.Int32,System.Int64>
-struct  Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields
-{
-public:
-	// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<UnderlyingType,ValueType> System.Diagnostics.Tracing.EnumHelper`1_Caster`1::Instance
-	Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * ___Instance_0;
-
-public:
-	inline static int32_t get_offset_of_Instance_0() { return static_cast<int32_t>(offsetof(Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields, ___Instance_0)); }
-	inline Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * get_Instance_0() const { return ___Instance_0; }
-	inline Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A ** get_address_of_Instance_0() { return &___Instance_0; }
-	inline void set_Instance_0(Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * value)
 	{
 		___Instance_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___Instance_0), (void*)value);
@@ -8062,15 +8034,6 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int32,System.Int64>
-struct  Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
 // System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int32,System.IntPtr>
 struct  Transformer_1_tF4E5AD75B7C97D1E146A64FE337106FD89C6F9A1  : public MulticastDelegate_t
 {
@@ -10193,18 +10156,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskScheduler_t74FBEEEDBDD5E0088FF0EEC18F45CD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_CreationOptionsFromContinuationOptions_mB5865DC3CF441EE1681B47B49A747344FDD6631D (int32_t ___continuationOptions0, int32_t* ___creationOptions1, int32_t* ___internalOptions2, const RuntimeMethod* method);
 // System.Void System.Threading.Tasks.Task::ContinueWithCore(System.Threading.Tasks.Task,System.Threading.Tasks.TaskScheduler,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_ContinueWithCore_m8C75A57E83C02512E15E4ED205F70EA555F16DDB (Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * __this, Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * ___continuationTask0, TaskScheduler_t74FBEEEDBDD5E0088FF0EEC18F45CD866B098D5D * ___scheduler1, CancellationToken_tC9D68381C9164A4BA10397257E87ADC832AF5FFD  ___cancellationToken2, int32_t ___options3, const RuntimeMethod* method);
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1<System.Int32>::Cast<System.Int64>(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnumHelper_1_Cast_TisInt64_t378EE0D608BD3107E77238E85F30D2BBD46981F3_mE191BA78BF62CC70C045AB78423D91369A600C55_gshared (int64_t ___value0, const RuntimeMethod* method)
-{
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 0));
-		Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * L_0 = ((Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(method->rgctx_data, 0)))->get_Instance_0();
-		int64_t L_1 = ___value0;
-		NullCheck((Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *)L_0);
-		int32_t L_2 = ((  int32_t (*) (Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *, int64_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *)L_0, (int64_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
-		return L_2;
-	}
-}
 // UnderlyingType System.Diagnostics.Tracing.EnumHelper`1<System.Int32>::Cast<System.IntPtr>(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnumHelper_1_Cast_TisIntPtr_t_m874909D7F866DB736BC465E575D5E4B392470DAE_gshared (intptr_t ___value0, const RuntimeMethod* method)
 {

@@ -20,7 +20,7 @@ IL2CPP_EXTERN_C_END
 
 
 // 0x00000001 System.Void UnityEngine.Rendering.HighDefinition.ShaderConfig::.cctor()
-extern void ShaderConfig__cctor_m53A3B26D467D83AC2A254EE619ED92B5DA2DC040 (void);
+extern void ShaderConfig__cctor_m53A3B26D467D83AC2A254EE619ED92B5DA2DC040 ();
 static Il2CppMethodPointer s_methodPointers[1] = 
 {
 	ShaderConfig__cctor_m53A3B26D467D83AC2A254EE619ED92B5DA2DC040,

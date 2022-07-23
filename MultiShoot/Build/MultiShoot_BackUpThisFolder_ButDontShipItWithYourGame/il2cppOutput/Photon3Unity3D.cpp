@@ -18895,7 +18895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeMethod_Invoke_m06F
 		else if (___parameterCount != 1)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -18921,9 +18921,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeMethod_Invoke_m06F
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef RuntimeObject * (*FunctionPointerType) (ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___serializedCustomObject0, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker1< RuntimeObject *, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* >::Invoke(targetMethod, targetThis, ___serializedCustomObject0);
@@ -18944,11 +18949,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeMethod_Invoke_m06F
 				{
 					typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___serializedCustomObject0) - 1), targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef RuntimeObject * (*FunctionPointerType) (ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___serializedCustomObject0, targetMethod);
 				}
 				else
 				{
@@ -19036,7 +19036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeStreamMethod_Invok
 		else if (___parameterCount != 2)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -19060,16 +19060,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeStreamMethod_Invok
 					typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___length1) - 1), targetMethod);
 				}
-				typedef RuntimeObject * (*FunctionPointerType) (StreamBuffer_t150C1A93931566242B84D31203028C4FA872CF2D *, int16_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___inStream0, ___length1, targetMethod);
+				else
+				{
+					typedef RuntimeObject * (*FunctionPointerType) (StreamBuffer_t150C1A93931566242B84D31203028C4FA872CF2D *, int16_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___inStream0, ___length1, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef RuntimeObject * (*FunctionPointerType) (StreamBuffer_t150C1A93931566242B84D31203028C4FA872CF2D *, int16_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___inStream0, ___length1, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker2< RuntimeObject *, StreamBuffer_t150C1A93931566242B84D31203028C4FA872CF2D *, int16_t >::Invoke(targetMethod, targetThis, ___inStream0, ___length1);
@@ -19090,11 +19098,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DeserializeStreamMethod_Invok
 				{
 					typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject*, int16_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___inStream0) - 1), ___length1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef RuntimeObject * (*FunctionPointerType) (StreamBuffer_t150C1A93931566242B84D31203028C4FA872CF2D *, int16_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___inStream0, ___length1, targetMethod);
 				}
 				else
 				{

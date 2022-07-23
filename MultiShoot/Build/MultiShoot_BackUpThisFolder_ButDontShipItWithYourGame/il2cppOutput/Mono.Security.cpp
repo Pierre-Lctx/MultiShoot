@@ -15990,7 +15990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate_t6F3E94ED7C8FB33253E4705C76A4
 		else if (___parameterCount != 4)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -16014,16 +16014,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate_t6F3E94ED7C8FB33253E4705C76A4
 					typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (RuntimeObject*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___localCertificates1) - 1), ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
 				}
-				typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (String_t*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
+				else
+				{
+					typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (String_t*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (String_t*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker4< X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, String_t*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* >::Invoke(targetMethod, targetThis, ___targetHost0, ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3);
@@ -16044,11 +16052,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate_t6F3E94ED7C8FB33253E4705C76A4
 				{
 					typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (RuntimeObject*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___targetHost0) - 1), ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 * (*FunctionPointerType) (String_t*, X509CertificateCollection_t2990976CAD6265665564A400870A381968AB706B *, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___localCertificates1, ___remoteCertificate2, ___acceptableIssuers3, targetMethod);
 				}
 				else
 				{
@@ -16139,7 +16142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MonoRemoteCertificateValidationCallback_
 		else if (___parameterCount != 4)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -16163,16 +16166,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MonoRemoteCertificateValidationCallback_
 					typedef bool (*FunctionPointerType) (RuntimeObject*, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___certificate1) - 1), ___chain2, ___sslPolicyErrors3, targetMethod);
 				}
-				typedef bool (*FunctionPointerType) (String_t*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___certificate1, ___chain2, ___sslPolicyErrors3, targetMethod);
+				else
+				{
+					typedef bool (*FunctionPointerType) (String_t*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___certificate1, ___chain2, ___sslPolicyErrors3, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef bool (*FunctionPointerType) (String_t*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___certificate1, ___chain2, ___sslPolicyErrors3, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker4< bool, String_t*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t >::Invoke(targetMethod, targetThis, ___targetHost0, ___certificate1, ___chain2, ___sslPolicyErrors3);
@@ -16193,11 +16204,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MonoRemoteCertificateValidationCallback_
 				{
 					typedef bool (*FunctionPointerType) (RuntimeObject*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___targetHost0) - 1), ___certificate1, ___chain2, ___sslPolicyErrors3, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef bool (*FunctionPointerType) (String_t*, X509Certificate_t6F3E94ED7C8FB33253E4705C76A40144E59F0553 *, X509Chain_t2167363ADB11F31A4A13E77EB73BEEE29381AF37 *, int32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___targetHost0, ___certificate1, ___chain2, ___sslPolicyErrors3, targetMethod);
 				}
 				else
 				{
@@ -22100,7 +22106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimalityTest_Invoke_m028D0C6E9367E09AB2
 		else if (___parameterCount != 2)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -22124,16 +22130,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimalityTest_Invoke_m028D0C6E9367E09AB2
 					typedef bool (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___confidence1) - 1), targetMethod);
 				}
-				typedef bool (*FunctionPointerType) (BigInteger_t3E22C5D54A28436FF4292EC337AF146B2F38379D *, int32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___bi0, ___confidence1, targetMethod);
+				else
+				{
+					typedef bool (*FunctionPointerType) (BigInteger_t3E22C5D54A28436FF4292EC337AF146B2F38379D *, int32_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___bi0, ___confidence1, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef bool (*FunctionPointerType) (BigInteger_t3E22C5D54A28436FF4292EC337AF146B2F38379D *, int32_t, const RuntimeMethod*);
+					result = ((FunctionPointerType)targetMethodPointer)(___bi0, ___confidence1, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						result = GenericInterfaceFuncInvoker2< bool, BigInteger_t3E22C5D54A28436FF4292EC337AF146B2F38379D *, int32_t >::Invoke(targetMethod, targetThis, ___bi0, ___confidence1);
@@ -22154,11 +22168,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimalityTest_Invoke_m028D0C6E9367E09AB2
 				{
 					typedef bool (*FunctionPointerType) (RuntimeObject*, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___bi0) - 1), ___confidence1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef bool (*FunctionPointerType) (BigInteger_t3E22C5D54A28436FF4292EC337AF146B2F38379D *, int32_t, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___bi0, ___confidence1, targetMethod);
 				}
 				else
 				{

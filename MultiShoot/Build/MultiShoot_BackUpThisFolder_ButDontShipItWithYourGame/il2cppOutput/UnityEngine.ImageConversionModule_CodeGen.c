@@ -20,7 +20,7 @@ IL2CPP_EXTERN_C_END
 
 
 // 0x00000001 System.Byte[] UnityEngine.ImageConversion::EncodeToEXR(UnityEngine.Texture2D,UnityEngine.Texture2D_EXRFlags)
-extern void ImageConversion_EncodeToEXR_mF1771F3F35480E47E31A104E1A4E5F7CC63049DE (void);
+extern void ImageConversion_EncodeToEXR_mF1771F3F35480E47E31A104E1A4E5F7CC63049DE ();
 static Il2CppMethodPointer s_methodPointers[1] = 
 {
 	ImageConversion_EncodeToEXR_mF1771F3F35480E47E31A104E1A4E5F7CC63049DE,

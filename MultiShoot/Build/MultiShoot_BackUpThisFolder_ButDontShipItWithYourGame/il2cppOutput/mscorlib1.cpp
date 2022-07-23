@@ -25578,13 +25578,6 @@ IL_004c:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean System.Runtime.Versioning.BinaryCompatibility::get_TargetsAtLeast_Desktop_V4_5_2()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BinaryCompatibility_get_TargetsAtLeast_Desktop_V4_5_2_mB3A6ED4FA4FFC286852ADC06B9D883DF84772577 (const RuntimeMethod* method)
-{
-	{
-		return (bool)1;
-	}
-}
 // System.Void System.Runtime.Versioning.BinaryCompatibility::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryCompatibility__cctor_m1F26ED7C852BA989F5B4F3A2D1B477F558A0B231 (const RuntimeMethod* method)
 {

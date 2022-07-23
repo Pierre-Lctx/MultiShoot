@@ -49812,7 +49812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FramePassCallback_Invoke_m4DA1C2A2870233
 		else if (___parameterCount != 3)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -49836,16 +49836,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FramePassCallback_Invoke_m4DA1C2A2870233
 					typedef void (*FunctionPointerType) (RuntimeObject*, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___buffers1) - 1), ___outputProperties2, targetMethod);
 				}
-				typedef void (*FunctionPointerType) (CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 *, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___cmd0, ___buffers1, ___outputProperties2, targetMethod);
+				else
+				{
+					typedef void (*FunctionPointerType) (CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 *, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___cmd0, ___buffers1, ___outputProperties2, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 *, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___cmd0, ___buffers1, ___outputProperties2, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker3< CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 *, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A  >::Invoke(targetMethod, targetThis, ___cmd0, ___buffers1, ___outputProperties2);
@@ -49866,11 +49874,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FramePassCallback_Invoke_m4DA1C2A2870233
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___cmd0) - 1), ___buffers1, ___outputProperties2, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (CommandBuffer_t25CD231BD3E822660339DB7D0E8F8ED6B7DBEA29 *, List_1_t2109341FE563D6F043AF10731BEA742DD54EBBD7 *, RenderOutputProperties_tABDBC217B5026FBFAACF50720A7F53D442F6452A , const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___cmd0, ___buffers1, ___outputProperties2, targetMethod);
 				}
 				else
 				{

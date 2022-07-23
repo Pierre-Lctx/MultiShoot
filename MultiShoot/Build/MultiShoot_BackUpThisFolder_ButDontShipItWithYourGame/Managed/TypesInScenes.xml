@@ -61,7 +61,9 @@
 		<type fullname="Launcher" preserve="nothing"/>
 		<type fullname="Menu" preserve="nothing"/>
 		<type fullname="MenuManager" preserve="nothing"/>
+		<type fullname="PlayerListItem" preserve="nothing"/>
 		<type fullname="RoomListItem" preserve="nothing"/>
+		<type fullname="RoomManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>

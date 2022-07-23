@@ -426,6 +426,8 @@ struct Transformer_1_t3D5DF6751A5C0D60CF6F2B25C575C87B052B5A09;
 struct Transformer_1_t99F6F9B70C5895106F3A5DB68D4B296689F8B067;
 // System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int32,System.Int32>
 struct Transformer_1_tA81CCAAE8973F628B7A145877B4062C5A6476EBA;
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int32,System.Int64>
+struct Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A;
 // System.Boolean[]
 struct BooleanU5BU5D_tEC7BAF93C44F875016DAADC8696EE3A465644D3C;
 // System.Byte[]
@@ -3310,6 +3312,32 @@ public:
 };
 
 
+// System.Diagnostics.Tracing.EnumHelper`1_Caster`1<System.Int32,System.Int64>
+struct  Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields
+{
+public:
+	// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<UnderlyingType,ValueType> System.Diagnostics.Tracing.EnumHelper`1_Caster`1::Instance
+	Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * ___Instance_0;
+
+public:
+	inline static int32_t get_offset_of_Instance_0() { return static_cast<int32_t>(offsetof(Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields, ___Instance_0)); }
+	inline Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * get_Instance_0() const { return ___Instance_0; }
+	inline Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A ** get_address_of_Instance_0() { return &___Instance_0; }
+	inline void set_Instance_0(Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * value)
+	{
+		___Instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Instance_0), (void*)value);
+	}
+};
+
+
 // System.Diagnostics.Tracing.EnumHelper`1<System.Byte>
 struct  EnumHelper_1_t20AF5068487E525E3E8193BD8075E5581B0827B5  : public RuntimeObject
 {
@@ -5565,24 +5593,6 @@ public:
 	{
 		___m_Value_2 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___m_Value_2), (void*)value);
-	}
-};
-
-
-// UnityEngine.Rendering.VolumeParameter`1<System.Single>
-struct  VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7  : public VolumeParameter_tC12A1A4DFCC791C06995421E31A6AE4A458D7BCB
-{
-public:
-	// T UnityEngine.Rendering.VolumeParameter`1::m_Value
-	float ___m_Value_2;
-
-public:
-	inline static int32_t get_offset_of_m_Value_2() { return static_cast<int32_t>(offsetof(VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7, ___m_Value_2)); }
-	inline float get_m_Value_2() const { return ___m_Value_2; }
-	inline float* get_address_of_m_Value_2() { return &___m_Value_2; }
-	inline void set_m_Value_2(float value)
-	{
-		___m_Value_2 = value;
 	}
 };
 
@@ -12517,6 +12527,15 @@ public:
 };
 
 
+// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int32,System.Int64>
+struct  Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // System.Net.WebConnection_<Connect>d__16
 struct  U3CConnectU3Ed__16_tA63A4A00134BC6D6990E42A53B5B5B7EA557F2EC 
 {
@@ -15723,25 +15742,6 @@ inline void AsyncTaskMethodBuilder_1_Start_TisU3CInitConnectionU3Ed__19_t31D5511
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CRunWithTimeoutU3Ed__234_1_tEE31DB966565A035B1C92FE76989AC4F30B1C538_m0907CAB5D8761572D12F0E5A9B7BC37528A43D8D (AsyncTaskMethodBuilder_1_tDD2A3BA099C327938EA03C35FDB1A7502BA73020 * __this, U3CRunWithTimeoutU3Ed__234_1_tEE31DB966565A035B1C92FE76989AC4F30B1C538 * ___stateMachine0, const RuntimeMethod* method)
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_tDD2A3BA099C327938EA03C35FDB1A7502BA73020 *, U3CRunWithTimeoutU3Ed__234_1_tEE31DB966565A035B1C92FE76989AC4F30B1C538 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CRunWithTimeoutU3Ed__234_1_tEE31DB966565A035B1C92FE76989AC4F30B1C538_m0907CAB5D8761572D12F0E5A9B7BC37528A43D8D_gshared)(__this, ___stateMachine0, method);
-}
-// T UnityEngine.Rendering.VolumeParameter::GetValue<System.Single>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VolumeParameter_GetValue_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m71A3CFF33EDE42C9127D094FE7BD9808E667AD6C_gshared (VolumeParameter_tC12A1A4DFCC791C06995421E31A6AE4A458D7BCB * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		// return ((VolumeParameter<T>) this).value;
-		NullCheck((VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7 *)((VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7 *)Castclass((RuntimeObject*)__this, IL2CPP_RGCTX_DATA(method->rgctx_data, 0))));
-		float L_0 = VirtFuncInvoker0< float >::Invoke(12 /* T UnityEngine.Rendering.VolumeParameter`1<System.Single>::get_value() */, (VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7 *)((VolumeParameter_1_tEAD8BA2E1993A0E02F8FDB436B5AB2F66E1036D7 *)Castclass((RuntimeObject*)__this, IL2CPP_RGCTX_DATA(method->rgctx_data, 0))));
-		V_0 = (float)L_0;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		// }
-		float L_1 = V_0;
-		return L_1;
-	}
 }
 // T UnityEngine.Rendering.VolumeParameter::GetValue<UnityEngine.Vector2>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  VolumeParameter_GetValue_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m0E3F548FE9AC793809DC3C8DBE87742A114FF199_gshared (VolumeParameter_tC12A1A4DFCC791C06995421E31A6AE4A458D7BCB * __this, const RuntimeMethod* method)
@@ -33079,6 +33079,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnumHelper_1_Cast_TisInt32_tFDE5F8CD4
 		int32_t L_1 = ___value0;
 		NullCheck((Transformer_1_tA81CCAAE8973F628B7A145877B4062C5A6476EBA *)L_0);
 		int32_t L_2 = ((  int32_t (*) (Transformer_1_tA81CCAAE8973F628B7A145877B4062C5A6476EBA *, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Transformer_1_tA81CCAAE8973F628B7A145877B4062C5A6476EBA *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+		return L_2;
+	}
+}
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1<System.Int32>::Cast<System.Int64>(ValueType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnumHelper_1_Cast_TisInt64_t378EE0D608BD3107E77238E85F30D2BBD46981F3_mE191BA78BF62CC70C045AB78423D91369A600C55_gshared (int64_t ___value0, const RuntimeMethod* method)
+{
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 0));
+		Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A * L_0 = ((Caster_1_t8FE124A275CD1D6FB67CEB3CE133803C71D0DC23_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(method->rgctx_data, 0)))->get_Instance_0();
+		int64_t L_1 = ___value0;
+		NullCheck((Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *)L_0);
+		int32_t L_2 = ((  int32_t (*) (Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *, int64_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Transformer_1_t02AD560B0C76565668CD783B3106FF62B8B84B6A *)L_0, (int64_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
 		return L_2;
 	}
 }

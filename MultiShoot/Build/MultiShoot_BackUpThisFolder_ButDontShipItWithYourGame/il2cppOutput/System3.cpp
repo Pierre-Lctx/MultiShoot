@@ -34460,7 +34460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProgressChangedEventHandler_Invoke_m901F
 		else if (___parameterCount != 2)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -34484,16 +34484,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProgressChangedEventHandler_Invoke_m901F
 					typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___e1) - 1), targetMethod);
 				}
-				typedef void (*FunctionPointerType) (RuntimeObject *, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 *, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				else
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker2< RuntimeObject *, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 * >::Invoke(targetMethod, targetThis, ___sender0, ___e1);
@@ -34514,11 +34522,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProgressChangedEventHandler_Invoke_m901F
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___sender0) - 1), ___e1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (RuntimeObject *, ProgressChangedEventArgs_tEA83DA014FC5B9B6430E31EC4D9EE792F80F7684 *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
 				}
 				else
 				{
@@ -34637,7 +34640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangedEventHandler_Invoke_m12B2
 		else if (___parameterCount != 2)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -34661,16 +34664,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangedEventHandler_Invoke_m12B2
 					typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___e1) - 1), targetMethod);
 				}
-				typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 *, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				else
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker2< RuntimeObject *, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 * >::Invoke(targetMethod, targetThis, ___sender0, ___e1);
@@ -34691,11 +34702,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangedEventHandler_Invoke_m12B2
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___sender0) - 1), ___e1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangedEventArgs_t808A113087635F3D104C8374BE1309A415BD0E22 *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
 				}
 				else
 				{
@@ -34814,7 +34820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangingEventHandler_Invoke_m409
 		else if (___parameterCount != 2)
 		{
 			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
@@ -34838,16 +34844,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangingEventHandler_Invoke_m409
 					typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___e1) - 1), targetMethod);
 				}
-				typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED *, const RuntimeMethod*);
-				((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				else
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
 			}
 		}
 		else
 		{
 			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
+			if (il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
 			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				if (targetThis == NULL)
+				{
+					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED *, const RuntimeMethod*);
+					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
+				}
+				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
 						GenericInterfaceActionInvoker2< RuntimeObject *, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED * >::Invoke(targetMethod, targetThis, ___sender0, ___e1);
@@ -34868,11 +34882,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyChangingEventHandler_Invoke_m409
 				{
 					typedef void (*FunctionPointerType) (RuntimeObject*, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED *, const RuntimeMethod*);
 					((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___sender0) - 1), ___e1, targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef void (*FunctionPointerType) (RuntimeObject *, PropertyChangingEventArgs_t5AFD5B24C431896EF32370DAE9A569FE0E2F91ED *, const RuntimeMethod*);
-					((FunctionPointerType)targetMethodPointer)(___sender0, ___e1, targetMethod);
 				}
 				else
 				{
