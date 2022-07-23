@@ -1110,7 +1110,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralBABE3225825740D4B38E1B426129BEB173526DB0
 IL2CPP_EXTERN_C String_t* _stringLiteralBEBCAD503DAFAD374E75E2BDB4EE1E32D740361F;
 IL2CPP_EXTERN_C String_t* _stringLiteralBF9C24A100CF052C37D416AF79A050CE5F426650;
 IL2CPP_EXTERN_C String_t* _stringLiteralC0178A80B5F0EC925E6A79673FB00AB1CC3CED51;
-IL2CPP_EXTERN_C String_t* _stringLiteralC263EA29ADF3548CFEBC57B532EED28451A56C10;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5978826869E3F9BF80F2AD7E8DC3428DB886683;
 IL2CPP_EXTERN_C String_t* _stringLiteralC80EAF7D556B35E97D7BD4261C87B1BF066A0221;
 IL2CPP_EXTERN_C String_t* _stringLiteralC981BE9C1F04078473AFB89D43A49C223508D178;
@@ -1165,7 +1164,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* RSAPKCS1SignatureFormatter_SetKey_m5D8D4354
 IL2CPP_EXTERN_C const RuntimeMethod* RSASignaturePadding__ctor_m6D661AD36D5BD9175B61161FB9ABB60F2AD3F190_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RandomNumberGenerator_GetBytes_mC6AA82DD0FB48DEFD9A8016A1FAF74ACC661922C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RandomNumberGenerator_GetNonZeroBytes_m99F32735C260A43B21F40B4E6C68EB42664C315C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Random_NextBytes_mFCEAD9FBB922E2485CB3FB949848B2A7D9629D8B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Random_Next_m21B9B5549D5481E970DBCA2AEB126DE506B8BD2F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Random_Next_m60152F7F899C8DE90A439822178FD0D14A541099_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReadObjectInfo_GetMemberInfo_m8889A36DA4D0D403A68C6154DA42CFBE224DDC82_RuntimeMethod_var;
@@ -1306,7 +1304,6 @@ IL2CPP_EXTERN_C const uint32_t RandomNumberGenerator_Create_m7569DCA24BE84401F83
 IL2CPP_EXTERN_C const uint32_t RandomNumberGenerator_Dispose_mB4E7A2E0CBCC074A08AA9A411B9CC5ADBD5F6618_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t RandomNumberGenerator_GetBytes_mC6AA82DD0FB48DEFD9A8016A1FAF74ACC661922C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t RandomNumberGenerator_GetNonZeroBytes_m99F32735C260A43B21F40B4E6C68EB42664C315C_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Random_NextBytes_mFCEAD9FBB922E2485CB3FB949848B2A7D9629D8B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Random_Next_m21B9B5549D5481E970DBCA2AEB126DE506B8BD2F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Random_Next_m60152F7F899C8DE90A439822178FD0D14A541099_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Random__ctor_m4372E46E0155A2BA0FA18FB6C0244C6AF650FBB4_MetadataUsageId;
@@ -20078,60 +20075,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Random_NextDouble_m6193384C8ECEB23AFF6
 	{
 		double L_0 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
 		return L_0;
-	}
-}
-// System.Void System.Random::NextBytes(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Random_NextBytes_mFCEAD9FBB922E2485CB3FB949848B2A7D9629D8B (Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118 * __this, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* ___buffer0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Random_NextBytes_mFCEAD9FBB922E2485CB3FB949848B2A7D9629D8B_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_0 = ___buffer0;
-		if (L_0)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB * L_1 = (ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB *)il2cpp_codegen_object_new(ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB_il2cpp_TypeInfo_var);
-		ArgumentNullException__ctor_m81AB157B93BFE2FBFDB08B88F84B444293042F97(L_1, _stringLiteralC263EA29ADF3548CFEBC57B532EED28451A56C10, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, Random_NextBytes_mFCEAD9FBB922E2485CB3FB949848B2A7D9629D8B_RuntimeMethod_var);
-	}
-
-IL_000e:
-	{
-		V_0 = 0;
-		goto IL_0026;
-	}
-
-IL_0012:
-	{
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_2 = ___buffer0;
-		int32_t L_3 = V_0;
-		int32_t L_4 = Random_InternalSample_mC89F02F84C755CB78A2D2A0989B3F35BB5F8991E(__this, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_4%(int32_t)((int32_t)256)))))));
-		int32_t L_5 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1));
-	}
-
-IL_0026:
-	{
-		int32_t L_6 = V_0;
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_7 = ___buffer0;
-		NullCheck(L_7);
-		if ((((int32_t)L_6) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_7)->max_length)))))))
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		return;
 	}
 }
 #ifdef __clang__

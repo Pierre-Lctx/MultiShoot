@@ -63,21 +63,20 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Photon3Unity3DCodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UICodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworkingCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Core_RuntimeCodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonChatCodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_UtilitiesCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworkingCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_HighDefinition_Config_RuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualEffectGraph_RuntimeCodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_DemosCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonChatCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonUnityNetworking_UtilitiesCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_PhotonWebSocketCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_HighDefinition_RuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[51] = 
+const Il2CppCodeGenModule* g_CodeGenModules[50] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -117,16 +116,15 @@ const Il2CppCodeGenModule* g_CodeGenModules[51] =
 	(&g_UnityEngine_VideoModuleCodeGenModule),
 	(&g_UnityEngineCodeGenModule),
 	(&g_Photon3Unity3DCodeGenModule),
-	(&g_PhotonRealtimeCodeGenModule),
 	(&g_UnityEngine_UICodeGenModule),
-	(&g_PhotonUnityNetworkingCodeGenModule),
+	(&g_PhotonRealtimeCodeGenModule),
 	(&g_Unity_RenderPipelines_Core_RuntimeCodeGenModule),
-	(&g_PhotonChatCodeGenModule),
-	(&g_PhotonUnityNetworking_UtilitiesCodeGenModule),
+	(&g_PhotonUnityNetworkingCodeGenModule),
 	(&g_Unity_RenderPipelines_HighDefinition_Config_RuntimeCodeGenModule),
 	(&g_Unity_TextMeshProCodeGenModule),
 	(&g_Unity_VisualEffectGraph_RuntimeCodeGenModule),
-	(&g_PhotonUnityNetworking_DemosCodeGenModule),
+	(&g_PhotonChatCodeGenModule),
+	(&g_PhotonUnityNetworking_UtilitiesCodeGenModule),
 	(&g_PhotonWebSocketCodeGenModule),
 	(&g_Unity_RenderPipelines_HighDefinition_RuntimeCodeGenModule),
 	(&g_AssemblyU2DCSharpCodeGenModule),
@@ -136,19 +134,19 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	10,
 	g_ReversePInvokeWrapperPointers,
-	25873,
+	25525,
 	g_Il2CppGenericMethodPointers,
-	5468,
+	5404,
 	g_Il2CppInvokerPointers,
-	8813,
+	8523,
 	g_AttributeGenerators,
-	1000,
+	995,
 	g_UnresolvedVirtualMethodPointers,
 	419,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	51,
+	50,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
