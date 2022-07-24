@@ -45,9 +45,13 @@
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.TerrainCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
+		<type fullname="UnityEngine.TerrainData" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="GunInfo" preserve="nothing"/>
+		<type fullname="Item" preserve="nothing"/>
 		<type fullname="Launcher" preserve="nothing"/>
 		<type fullname="Menu" preserve="nothing"/>
 		<type fullname="MenuManager" preserve="nothing"/>

@@ -2019,8 +2019,8 @@ static const Il2CppRGCTXDefinition s_rgctxValues[6] =
 {
 	{ (Il2CppRGCTXDataType)3, 30216 },
 	{ (Il2CppRGCTXDataType)3, 30217 },
-	{ (Il2CppRGCTXDataType)2, 14710 },
-	{ (Il2CppRGCTXDataType)2, 14751 },
+	{ (Il2CppRGCTXDataType)2, 14716 },
+	{ (Il2CppRGCTXDataType)2, 14757 },
 	{ (Il2CppRGCTXDataType)3, 30218 },
 	{ (Il2CppRGCTXDataType)3, 30219 },
 };

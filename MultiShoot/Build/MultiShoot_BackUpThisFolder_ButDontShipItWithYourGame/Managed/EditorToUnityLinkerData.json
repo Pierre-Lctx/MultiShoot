@@ -399,7 +399,8 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Testing_Scene.unity"
+                "Assets/Scenes/Testing_Scene.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -483,7 +484,8 @@
             "fullManagedTypeName": "UnityEngine.LightProbes",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Testing_Scene.unity"
+                "Assets/Scenes/Testing_Scene.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -508,12 +510,44 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "MeshCollider",
-            "fullManagedTypeName": "UnityEngine.MeshCollider",
-            "moduleName": "Physics",
+            "nativeClass": "TerrainCollider",
+            "fullManagedTypeName": "UnityEngine.TerrainCollider",
+            "moduleName": "TerrainPhysics",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Terrain",
+            "fullManagedTypeName": "UnityEngine.Terrain",
+            "moduleName": "Terrain",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "TerrainData",
+            "fullManagedTypeName": "UnityEngine.TerrainData",
+            "moduleName": "Terrain",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GunInfo",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Item",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
