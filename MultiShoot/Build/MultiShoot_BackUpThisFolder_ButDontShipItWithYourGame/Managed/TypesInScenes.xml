@@ -51,7 +51,6 @@
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="GunInfo" preserve="nothing"/>
-		<type fullname="Item" preserve="nothing"/>
 		<type fullname="Launcher" preserve="nothing"/>
 		<type fullname="Menu" preserve="nothing"/>
 		<type fullname="MenuManager" preserve="nothing"/>
@@ -61,6 +60,7 @@
 		<type fullname="PlayerManager" preserve="nothing"/>
 		<type fullname="RoomListItem" preserve="nothing"/>
 		<type fullname="RoomManager" preserve="nothing"/>
+		<type fullname="SingleShotGun" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonTransformView" preserve="nothing"/>
