@@ -389,6 +389,8 @@ struct EventDescriptor_tD9126675DC9BA77C173ABBF094547123B5029CE4;
 struct EventDescriptorCollection_tC32F2BEA4D74E0FEE1E014649FA0BFE315F66A37;
 // System.ComponentModel.EventHandlerList
 struct EventHandlerList_t085C99C5BEAB950B4B76BB13379FBCA0AA75A714;
+// System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
+struct ExcludeFromCodeCoverageAttribute_tFEDA2165DC4920539BEB2F72C8A78D10BB6F9CA0;
 // System.Text.RegularExpressions.ExclusiveReference
 struct ExclusiveReference_t7F4A5D2416EA34710F520BAD225E61BC1E98D1D8;
 // System.Threading.ExecutionContext
@@ -6704,6 +6706,15 @@ public:
 	{
 		___NearPositiveZero_13 = value;
 	}
+};
+
+
+// System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
+struct  ExcludeFromCodeCoverageAttribute_tFEDA2165DC4920539BEB2F72C8A78D10BB6F9CA0  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+
+public:
 };
 
 
@@ -35941,6 +35952,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebException_t824617203133537D3B05BF786C22AEC
 		WebException_t824617203133537D3B05BF786C22AECE0E2DBD08 * L_1 = (WebException_t824617203133537D3B05BF786C22AECE0E2DBD08 *)il2cpp_codegen_object_new(WebException_t824617203133537D3B05BF786C22AECE0E2DBD08_il2cpp_TypeInfo_var);
 		WebException__ctor_m4D8BF7D61087F7AA4018215A6DCF7578AEA4DB08(L_1, L_0, 6, /*hidden argument*/NULL);
 		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExcludeFromCodeCoverageAttribute__ctor_mC4864A7299B691B672E31F543BEFD61DEB7C2832 (ExcludeFromCodeCoverageAttribute_tFEDA2165DC4920539BEB2F72C8A78D10BB6F9CA0 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
+		return;
 	}
 }
 #ifdef __clang__

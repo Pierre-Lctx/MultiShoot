@@ -5,9 +5,13 @@ using Photon.Pun;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using ExitGames.Client.Photon;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 {
+    [SerializeField] Image healthBarImage;
+    [SerializeField] GameObject ui;
+
     [SerializeField] GameObject cameraHolder;
 
     [SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime;
@@ -16,6 +20,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 
     int itemIndex;
     int previousItemIndex = -1;
+
+    float lerpSpeed;
 
     float verticalLookRotation;
     bool grounded;
@@ -49,6 +55,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
+            Destroy(ui);
         }
     }
 
@@ -192,6 +199,14 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         }
 
         currentHealth -= damage;
+
+        lerpSpeed = 3f * Time.deltaTime;
+
+        healthBarImage.fillAmount = Mathf.Lerp(healthBarImage.fillAmount, (currentHealth / maxHealth), lerpSpeed);
+
+        Color healthColor = Color.Lerp(Color.red, Color.green, (currentHealth / maxHealth));
+
+        healthBarImage.color = healthColor;
 
         if (currentHealth <= 0)
         {

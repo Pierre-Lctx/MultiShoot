@@ -46,7 +46,6 @@ public class Launcher : MonoBehaviourPunCallbacks
         //Fonction de callback lorsque nous avons rejoins le lobby
         MenuManager.Instance.OpenMenu("title");
         Debug.Log("Connexion au Lobby : OK !");
-        PhotonNetwork.NickName = "Player" + Random.Range(0, 1000).ToString("0000");
     }
 
     public void CreateRoom()

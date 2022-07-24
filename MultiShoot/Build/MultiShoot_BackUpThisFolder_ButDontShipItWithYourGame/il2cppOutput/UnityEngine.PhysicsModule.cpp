@@ -12,6 +12,8 @@
 
 
 
+// UnityEngine.BoxCollider
+struct BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5;
 // UnityEngine.CharacterController
 struct CharacterController_tCCF68621C784CCB3391E0C66FE134F6F93DD6C2E;
 // UnityEngine.Collider
@@ -22,16 +24,22 @@ struct Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0;
 struct MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98;
 // UnityEngine.Rigidbody
 struct Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A;
+// UnityEngine.SphereCollider
+struct SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
 // System.Char[]
 struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
+// UnityEngine.Collider[]
+struct ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486;
 // UnityEngine.Component
 struct Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684;
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t1ACD262B1EA44CD48E2039381DE96847F203E62B;
 // UnityEngine.GameObject
 struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319;
+// UnityEngine.Mesh
+struct Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6;
 // UnityEngine.Object
 struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A;
 // System.Object[]
@@ -59,6 +67,7 @@ IL2CPP_EXTERN_C const uint32_t RaycastHit_get_collider_m13A3DE16FBC631E0A1F987E0
 struct ContactPoint_tC179732A8E0014F5EFF5977ED1ADF12CF14A9017 ;
 
 struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
+struct ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486;
 struct ContactPointU5BU5D_t1ACD262B1EA44CD48E2039381DE96847F203E62B;
 struct RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09;
 
@@ -1150,6 +1159,15 @@ public:
 };
 
 
+// UnityEngine.Mesh
+struct  Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.Collider
 struct  Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
 {
@@ -1285,6 +1303,43 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Collider[]
+struct ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * m_Items[1];
+
+public:
+	inline Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // System.Object[]
 struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE  : public RuntimeArray
 {
@@ -1325,10 +1380,16 @@ public:
 
 
 
+// System.Void UnityEngine.BoxCollider::get_center_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method);
+// System.Void UnityEngine.BoxCollider::get_size_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Collider::ClosestPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_ClosestPoint_Injected_m6D72FF73D51838EE47234CB4D6234521C08B780D (Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___position0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret1, const RuntimeMethod* method);
 // System.Void UnityEngine.Collider::get_bounds_Injected(UnityEngine.Bounds&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_get_bounds_Injected_m9BA8C3BC133BC241D571849C4F10F67A951CA962 (Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * __this, Bounds_t0F1F36D4F7AF49524B3C2A2259594412A3D3AE37 * ___ret0, const RuntimeMethod* method);
+// System.Void UnityEngine.Component::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Component__ctor_m0B00FA207EB3E560B78938D8AD877DB2BC1E3722 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
@@ -1361,6 +1422,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8 (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___origin0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction1, float ___maxDistance2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method);
 // System.Int32 UnityEngine.PhysicsScene::Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73 (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___origin0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction1, RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* ___raycastHits2, float ___maxDistance3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291 (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 * ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_Internal_m92572431C76930C21D10CEFC0F0D37B945A6F4FF (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_m1CDA8916BA89EE2B497158A08CD571044D60054B (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___position0, float ___radius1, int32_t ___layerMask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method);
 // System.String UnityEngine.UnityString::Format(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityString_Format_m7A07C068ED408DD06F634070770FB55F13AA4EC9 (String_t* ___fmt0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method);
 // System.String UnityEngine.PhysicsScene::ToString()
@@ -1417,6 +1484,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_MovePosition_Injected_m0645425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_m233C3E22C3FE9D2BCBBC510132B82CE26057370C (Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___force0, int32_t ___mode1, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_m78B9D94F505E19F3C63461362AD6DE7EA0836700 (Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___force0, int32_t ___mode1, const RuntimeMethod* method);
+// System.Void UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method);
 #ifdef __clang__
@@ -1432,6 +1501,46 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m57495F692C6CE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Vector3 UnityEngine.BoxCollider::get_center()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  BoxCollider_get_center_m832B93439717C72D4A3B427C6E8F5B54E2DBD669 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, const RuntimeMethod* method)
+{
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51(__this, (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&V_0), /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = V_0;
+		return L_0;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.BoxCollider::get_size()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  BoxCollider_get_size_mBC38D4926D4BE54A6532F6E1D642F363CA3A58A1 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, const RuntimeMethod* method)
+{
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22(__this, (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&V_0), /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.BoxCollider::get_center_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method)
+{
+	typedef void (*BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51_ftn) (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 *, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *);
+	static BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (BoxCollider_get_center_Injected_m5F060E93AE651FB756B9371C7A716BDAA2A96F51_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.BoxCollider::get_center_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
+}
+// System.Void UnityEngine.BoxCollider::get_size_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22 (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method)
+{
+	typedef void (*BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22_ftn) (BoxCollider_tA530691AC1A3C9FE6428F68F98588FCB1BF9AAA5 *, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *);
+	static BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (BoxCollider_get_size_Injected_mC9ABFED6FEC27351BC116B44021578CB39CBCB22_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.BoxCollider::get_size_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1486,6 +1595,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bounds_t0F1F36D4F7AF49524B3C2A2259594412A3D3A
 		Collider_get_bounds_Injected_m9BA8C3BC133BC241D571849C4F10F67A951CA962(__this, (Bounds_t0F1F36D4F7AF49524B3C2A2259594412A3D3AE37 *)(&V_0), /*hidden argument*/NULL);
 		Bounds_t0F1F36D4F7AF49524B3C2A2259594412A3D3AE37  L_0 = V_0;
 		return L_0;
+	}
+}
+// System.Void UnityEngine.Collider::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider__ctor_m09D7A9B985D74FD50346DA08D88EB1874E968B69 (Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * __this, const RuntimeMethod* method)
+{
+	{
+		Component__ctor_m0B00FA207EB3E560B78938D8AD877DB2BC1E3722(__this, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Void UnityEngine.Collider::ClosestPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -1654,6 +1771,16 @@ IL2CPP_EXTERN_C void ControllerColliderHit_t483E787AA2D92263EC1F899BCF1FFC3F2B96
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Mesh UnityEngine.MeshCollider::get_sharedMesh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * MeshCollider_get_sharedMesh_m77D27894F87619BD2AF868BC1156583EEC0D8CB4 (MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98 * __this, const RuntimeMethod* method)
+{
+	typedef Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * (*MeshCollider_get_sharedMesh_m77D27894F87619BD2AF868BC1156583EEC0D8CB4_ftn) (MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98 *);
+	static MeshCollider_get_sharedMesh_m77D27894F87619BD2AF868BC1156583EEC0D8CB4_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MeshCollider_get_sharedMesh_m77D27894F87619BD2AF868BC1156583EEC0D8CB4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.MeshCollider::get_sharedMesh()");
+	Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
 // System.Boolean UnityEngine.MeshCollider::get_convex()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshCollider_get_convex_m115EB1C243F7EFD1EBAB80350E98EB3DE1A4C44C (MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98 * __this, const RuntimeMethod* method)
 {
@@ -1663,6 +1790,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshCollider_get_convex_m115EB1C243F7EFD
 	_il2cpp_icall_func = (MeshCollider_get_convex_m115EB1C243F7EFD1EBAB80350E98EB3DE1A4C44C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.MeshCollider::get_convex()");
 	bool retVal = _il2cpp_icall_func(__this);
 	return retVal;
+}
+// System.Void UnityEngine.MeshCollider::set_convex(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshCollider_set_convex_mE94F2BE7760587C1944992B7AF9959ED425F631A (MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	typedef void (*MeshCollider_set_convex_mE94F2BE7760587C1944992B7AF9959ED425F631A_ftn) (MeshCollider_t1983F4E7E53D8C6B65FE21A8B4E2345A84D57E98 *, bool);
+	static MeshCollider_set_convex_mE94F2BE7760587C1944992B7AF9959ED425F631A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MeshCollider_set_convex_mE94F2BE7760587C1944992B7AF9959ED425F631A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.MeshCollider::set_convex(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -2464,6 +2600,56 @@ IL_001c:
 		return L_5;
 	}
 }
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_Internal_m92572431C76930C21D10CEFC0F0D37B945A6F4FF (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method)
+{
+	{
+		float L_0 = ___radius2;
+		int32_t L_1 = ___layerMask3;
+		int32_t L_2 = ___queryTriggerInteraction4;
+		ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* L_3 = Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&___physicsScene0), (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___position1), L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_m1CDA8916BA89EE2B497158A08CD571044D60054B (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___position0, float ___radius1, int32_t ___layerMask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method)
+{
+	ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* V_0 = NULL;
+	{
+		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___position0;
+		float L_2 = ___radius1;
+		int32_t L_3 = ___layerMask2;
+		int32_t L_4 = ___queryTriggerInteraction3;
+		ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* L_5 = Physics_OverlapSphere_Internal_m92572431C76930C21D10CEFC0F0D37B945A6F4FF(L_0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* L_6 = V_0;
+		return L_6;
+	}
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere(UnityEngine.Vector3,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_mE4A0577DF7C0681DE7FFC4F2A2C1BFB8D402CA0C (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___position0, float ___radius1, const RuntimeMethod* method)
+{
+	ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* V_0 = NULL;
+	{
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___position0;
+		float L_1 = ___radius1;
+		ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* L_2 = Physics_OverlapSphere_m1CDA8916BA89EE2B497158A08CD571044D60054B(L_0, L_1, (-1), 0, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* L_3 = V_0;
+		return L_3;
+	}
+}
 // System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_get_defaultPhysicsScene_Injected_m0B71068269B3C8499A258BBCAEA7E3D9D020BADA (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 * ___ret0, const RuntimeMethod* method)
 {
@@ -2481,6 +2667,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Physics_Internal_RaycastAll_Injected_mD4C3E8762D9FCEE654CE0415E636EB7DBEC92A5B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* retVal = _il2cpp_icall_func(___physicsScene0, ___ray1, ___maxDistance2, ___mask3, ___queryTriggerInteraction4);
+	return retVal;
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291 (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 * ___physicsScene0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method)
+{
+	typedef ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* (*Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291_ftn) (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *, float, int32_t, int32_t);
+	static Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics_OverlapSphere_Internal_Injected_mBC7164D0CB4C0ED3299EE6515F162F324C16D291_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
+	ColliderU5BU5D_t5124940293343DB3D31DA41C593709905906E486* retVal = _il2cpp_icall_func(___physicsScene0, ___position1, ___radius2, ___layerMask3, ___queryTriggerInteraction4);
 	return retVal;
 }
 #ifdef __clang__
@@ -3193,6 +3389,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_m233C3E22C3F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Vector3 UnityEngine.SphereCollider::get_center()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  SphereCollider_get_center_mBFAE4FFFC76B8FD8F1B2B2F12C52A30470443D3A (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A * __this, const RuntimeMethod* method)
+{
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB(__this, (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&V_0), /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Single UnityEngine.SphereCollider::get_radius()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SphereCollider_get_radius_m403989140BDAD513299276953B481167CF08D02F (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A * __this, const RuntimeMethod* method)
+{
+	typedef float (*SphereCollider_get_radius_m403989140BDAD513299276953B481167CF08D02F_ftn) (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A *);
+	static SphereCollider_get_radius_m403989140BDAD513299276953B481167CF08D02F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_get_radius_m403989140BDAD513299276953B481167CF08D02F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::get_radius()");
+	float retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Void UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * ___ret0, const RuntimeMethod* method)
+{
+	typedef void (*SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB_ftn) (SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A *, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *);
+	static SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_get_center_Injected_mF082CC62A7E8DE3DD5B86518C210D85139DD93CB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -50,6 +50,7 @@
 		<type fullname="UnityEngine.TerrainData" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Billboard" preserve="nothing"/>
 		<type fullname="GunInfo" preserve="nothing"/>
 		<type fullname="Launcher" preserve="nothing"/>
 		<type fullname="Menu" preserve="nothing"/>
@@ -58,14 +59,35 @@
 		<type fullname="PlayerGroundCheck" preserve="nothing"/>
 		<type fullname="PlayerListItem" preserve="nothing"/>
 		<type fullname="PlayerManager" preserve="nothing"/>
+		<type fullname="PlayerNameManager" preserve="nothing"/>
 		<type fullname="RoomListItem" preserve="nothing"/>
 		<type fullname="RoomManager" preserve="nothing"/>
 		<type fullname="SingleShotGun" preserve="nothing"/>
+		<type fullname="SpawnManager" preserve="nothing"/>
+		<type fullname="Spawnpoint" preserve="nothing"/>
+		<type fullname="UsernameDisplay" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonTransformView" preserve="nothing"/>
 		<type fullname="Photon.Pun.PhotonView" preserve="nothing"/>
 		<type fullname="Photon.Pun.ServerSettings" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.Postprocessing.Runtime">
+		<type fullname="UnityEngine.Rendering.PostProcessing.AmbientOcclusion" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.AutoExposure" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.Bloom" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.ChromaticAberration" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.ColorGrading" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.DepthOfField" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.Grain" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.LensDistortion" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.MotionBlur" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.PostProcessLayer" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.PostProcessProfile" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.PostProcessResources" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.PostProcessVolume" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.PostProcessing.Vignette" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerBitField" preserve="nothing"/>
