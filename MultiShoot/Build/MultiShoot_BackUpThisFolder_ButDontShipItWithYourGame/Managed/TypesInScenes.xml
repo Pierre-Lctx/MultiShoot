@@ -62,6 +62,8 @@
 		<type fullname="PlayerNameManager" preserve="nothing"/>
 		<type fullname="RoomListItem" preserve="nothing"/>
 		<type fullname="RoomManager" preserve="nothing"/>
+		<type fullname="Scoreboard" preserve="nothing"/>
+		<type fullname="ScoreboardItem" preserve="nothing"/>
 		<type fullname="SingleShotGun" preserve="nothing"/>
 		<type fullname="SpawnManager" preserve="nothing"/>
 		<type fullname="Spawnpoint" preserve="nothing"/>

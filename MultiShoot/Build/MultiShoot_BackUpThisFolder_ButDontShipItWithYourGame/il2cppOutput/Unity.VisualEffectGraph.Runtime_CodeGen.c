@@ -176,19 +176,19 @@ static const Il2CppTokenRangePair s_rgctxIndices[7] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[13] = 
 {
-	{ (Il2CppRGCTXDataType)3, 31669 },
-	{ (Il2CppRGCTXDataType)3, 31670 },
-	{ (Il2CppRGCTXDataType)2, 20660 },
-	{ (Il2CppRGCTXDataType)3, 31671 },
-	{ (Il2CppRGCTXDataType)2, 20662 },
-	{ (Il2CppRGCTXDataType)3, 31672 },
-	{ (Il2CppRGCTXDataType)3, 31673 },
-	{ (Il2CppRGCTXDataType)3, 31674 },
-	{ (Il2CppRGCTXDataType)2, 16963 },
-	{ (Il2CppRGCTXDataType)3, 31675 },
-	{ (Il2CppRGCTXDataType)2, 20663 },
-	{ (Il2CppRGCTXDataType)3, 31676 },
 	{ (Il2CppRGCTXDataType)3, 31677 },
+	{ (Il2CppRGCTXDataType)3, 31678 },
+	{ (Il2CppRGCTXDataType)2, 20667 },
+	{ (Il2CppRGCTXDataType)3, 31679 },
+	{ (Il2CppRGCTXDataType)2, 20669 },
+	{ (Il2CppRGCTXDataType)3, 31680 },
+	{ (Il2CppRGCTXDataType)3, 31681 },
+	{ (Il2CppRGCTXDataType)3, 31682 },
+	{ (Il2CppRGCTXDataType)2, 16964 },
+	{ (Il2CppRGCTXDataType)3, 31683 },
+	{ (Il2CppRGCTXDataType)2, 20670 },
+	{ (Il2CppRGCTXDataType)3, 31684 },
+	{ (Il2CppRGCTXDataType)3, 31685 },
 };
 extern const Il2CppCodeGenModule g_Unity_VisualEffectGraph_RuntimeCodeGenModule;
 const Il2CppCodeGenModule g_Unity_VisualEffectGraph_RuntimeCodeGenModule = 

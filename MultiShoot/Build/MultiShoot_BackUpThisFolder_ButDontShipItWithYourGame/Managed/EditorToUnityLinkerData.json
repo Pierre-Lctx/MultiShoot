@@ -413,7 +413,8 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/Menu.unity"
+                "Assets/Scenes/Menu.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -422,7 +423,8 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Menu.unity"
+                "Assets/Scenes/Menu.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -451,7 +453,8 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/Menu.unity"
+                "Assets/Scenes/Menu.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -469,7 +472,8 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/Menu.unity"
+                "Assets/Scenes/Menu.unity",
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -620,6 +624,20 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "RoomManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Scoreboard",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ScoreboardItem",
             "moduleName": "",
             "usedInScenes": []
         },
