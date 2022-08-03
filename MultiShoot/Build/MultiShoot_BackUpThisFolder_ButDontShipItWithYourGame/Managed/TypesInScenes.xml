@@ -46,6 +46,7 @@
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.TerrainCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
 		<type fullname="UnityEngine.TerrainData" preserve="nothing"/>
 	</assembly>

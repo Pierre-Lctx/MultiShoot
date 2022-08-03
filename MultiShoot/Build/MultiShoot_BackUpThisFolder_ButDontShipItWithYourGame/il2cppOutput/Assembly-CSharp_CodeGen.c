@@ -158,89 +158,95 @@ extern void PlayerManager_Die_m1FDAE7B1320B80ED49DFF09BFE7ABEAD58EF96F2 ();
 extern void PlayerManager_GetKill_mFC41AC8FC54DC044D2D53C37145CBD0A26C7F691 ();
 // 0x00000047 System.Void PlayerManager::RPC_GetKill()
 extern void PlayerManager_RPC_GetKill_mF7AD24C2667F511613E7FF697DFDBC50108E4E3A ();
-// 0x00000048 PlayerManager PlayerManager::Find(Photon.Realtime.Player)
+// 0x00000048 System.Void PlayerManager::GetDeath()
+extern void PlayerManager_GetDeath_m08C36CF34DEEC4B1A32EC1E6B61C69735F353D19 ();
+// 0x00000049 System.Void PlayerManager::RPC_GetDeath()
+extern void PlayerManager_RPC_GetDeath_mE5D12B30BDA0C8410CA8AF6F695B12FCED46BB99 ();
+// 0x0000004A PlayerManager PlayerManager::Find(Photon.Realtime.Player)
 extern void PlayerManager_Find_m567EFA82113ED596782AB4C6FE18FAB5101A2635 ();
-// 0x00000049 System.Void PlayerManager::.ctor()
+// 0x0000004B System.Void PlayerManager::.ctor()
 extern void PlayerManager__ctor_m4C7CA12A8243D6CA73C1EA65B361E7B717070471 ();
-// 0x0000004A System.Void PlayerManager_<>c__DisplayClass9_0::.ctor()
-extern void U3CU3Ec__DisplayClass9_0__ctor_mBC9065E5D5C8DAA9021B38F7EAE1C86D8875F71A ();
-// 0x0000004B System.Boolean PlayerManager_<>c__DisplayClass9_0::<Find>b__0(PlayerManager)
-extern void U3CU3Ec__DisplayClass9_0_U3CFindU3Eb__0_m46909A62A5090013941E37326163B918B0ACC650 ();
-// 0x0000004C System.Void PlayerNameManager::Start()
+// 0x0000004C System.Void PlayerManager_<>c__DisplayClass12_0::.ctor()
+extern void U3CU3Ec__DisplayClass12_0__ctor_m47FBCAFD24070C0F96A3AC30D34FA179FF68C197 ();
+// 0x0000004D System.Boolean PlayerManager_<>c__DisplayClass12_0::<Find>b__0(PlayerManager)
+extern void U3CU3Ec__DisplayClass12_0_U3CFindU3Eb__0_m8DC7128C047BF57678C36C80EBEEAAA826AFB7A3 ();
+// 0x0000004E System.Void PlayerNameManager::Start()
 extern void PlayerNameManager_Start_m2AA2DF74FB001BE39657792413750DB1B329E4DB ();
-// 0x0000004D System.Void PlayerNameManager::OnUsernameInputValueChanged()
+// 0x0000004F System.Void PlayerNameManager::OnUsernameInputValueChanged()
 extern void PlayerNameManager_OnUsernameInputValueChanged_m523FC413DF864D0193DA449132B3928055B69942 ();
-// 0x0000004E System.Void PlayerNameManager::.ctor()
+// 0x00000050 System.Void PlayerNameManager::.ctor()
 extern void PlayerNameManager__ctor_m588CA12751619F7A3E83A05292E82D0F64E5F8A9 ();
-// 0x0000004F System.Void Scoreboard::Start()
+// 0x00000051 System.Void Scoreboard::Start()
 extern void Scoreboard_Start_mF1B5C28F1388685E6C646B6E311488BF26B1B10A ();
-// 0x00000050 System.Void Scoreboard::OnPlayerEnteredRoom(Photon.Realtime.Player)
+// 0x00000052 System.Void Scoreboard::OnPlayerEnteredRoom(Photon.Realtime.Player)
 extern void Scoreboard_OnPlayerEnteredRoom_m0E0718BED987E4AC26341BCC44CC61158FC6A5C3 ();
-// 0x00000051 System.Void Scoreboard::OnPlayerLeftRoom(Photon.Realtime.Player)
+// 0x00000053 System.Void Scoreboard::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void Scoreboard_OnPlayerLeftRoom_m93349CD57C407B0944F9EC15D9CA40736505EA1C ();
-// 0x00000052 System.Void Scoreboard::AddScoreboardItem(Photon.Realtime.Player)
+// 0x00000054 System.Void Scoreboard::AddScoreboardItem(Photon.Realtime.Player)
 extern void Scoreboard_AddScoreboardItem_m4882EA0DF65289AF08B1A5C058EAC469F3B88D3D ();
-// 0x00000053 System.Void Scoreboard::RemoveScoreboardItem(Photon.Realtime.Player)
+// 0x00000055 System.Void Scoreboard::RemoveScoreboardItem(Photon.Realtime.Player)
 extern void Scoreboard_RemoveScoreboardItem_mB68BE0DBCF0BFDF74BCE89544211762800D92DA3 ();
-// 0x00000054 System.Void Scoreboard::.ctor()
+// 0x00000056 System.Void Scoreboard::Update()
+extern void Scoreboard_Update_m15E4A86E99BE3A15B529D5DB8EA1A59CAF5408A1 ();
+// 0x00000057 System.Void Scoreboard::.ctor()
 extern void Scoreboard__ctor_m51F4AFB7555F238836C11A836C24A3584D10371C ();
-// 0x00000055 System.Void ScoreboardItem::Initialize(Photon.Realtime.Player)
+// 0x00000058 System.Void ScoreboardItem::Initialize(Photon.Realtime.Player)
 extern void ScoreboardItem_Initialize_m162C86B07D69697AD415FE0802DC55E100783110 ();
-// 0x00000056 System.Void ScoreboardItem::UpdateStats()
+// 0x00000059 System.Void ScoreboardItem::UpdateStats()
 extern void ScoreboardItem_UpdateStats_m20B273D1AF14C83B400C2C46CA46764AD31E4429 ();
-// 0x00000057 System.Void ScoreboardItem::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
+// 0x0000005A System.Void ScoreboardItem::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
 extern void ScoreboardItem_OnPlayerPropertiesUpdate_mE7175B8B8F30C890DA110068B2191B48CF38AC84 ();
-// 0x00000058 System.Void ScoreboardItem::.ctor()
+// 0x0000005B System.Void ScoreboardItem::.ctor()
 extern void ScoreboardItem__ctor_m55132A0C6841EC21C3F17035FDFA760970978977 ();
-// 0x00000059 System.Void SpawnManager::Awake()
+// 0x0000005C System.Void SpawnManager::Awake()
 extern void SpawnManager_Awake_mAA4782E6BB38FD064066134F836BFC0D1E22C5ED ();
-// 0x0000005A UnityEngine.Transform SpawnManager::GetSpawnpoint()
+// 0x0000005D UnityEngine.Transform SpawnManager::GetSpawnpoint()
 extern void SpawnManager_GetSpawnpoint_m6CECD32FDAA2EAB69EDD4B85693C189C41167D05 ();
-// 0x0000005B System.Void SpawnManager::.ctor()
+// 0x0000005E System.Void SpawnManager::.ctor()
 extern void SpawnManager__ctor_mBCD48EEAB1EB733A88D47C85ACC373C796F20E59 ();
-// 0x0000005C System.Void Spawnpoint::Awake()
+// 0x0000005F System.Void Spawnpoint::Awake()
 extern void Spawnpoint_Awake_mDFF2A9D8573B73567AD77F96902AF5269970E1C7 ();
-// 0x0000005D System.Void Spawnpoint::.ctor()
+// 0x00000060 System.Void Spawnpoint::.ctor()
 extern void Spawnpoint__ctor_m6E3B4CE0B2D0A22A3E3366CF08813698E03E1CF8 ();
-// 0x0000005E System.Void UsernameDisplay::Start()
+// 0x00000061 System.Void UsernameDisplay::Start()
 extern void UsernameDisplay_Start_mB27B58282D6B9D9347220C104CB0B6892E6777DB ();
-// 0x0000005F System.Void UsernameDisplay::.ctor()
+// 0x00000062 System.Void UsernameDisplay::.ctor()
 extern void UsernameDisplay__ctor_mC84E68114906E4D9E28E4D91D59320B44D929BC7 ();
-// 0x00000060 System.Void RoomManager::Awake()
+// 0x00000063 System.Void RoomManager::Awake()
 extern void RoomManager_Awake_m1B0A42856399F2B323B12A1EC2313430753F2676 ();
-// 0x00000061 System.Void RoomManager::OnEnable()
+// 0x00000064 System.Void RoomManager::OnEnable()
 extern void RoomManager_OnEnable_m9296F4D0D35A91B5DE105E9ACCF3A3710798AA95 ();
-// 0x00000062 System.Void RoomManager::OnDisable()
+// 0x00000065 System.Void RoomManager::OnDisable()
 extern void RoomManager_OnDisable_m1AD6576F43FBB141C67E93D81EC9F3BB22D241ED ();
-// 0x00000063 System.Void RoomManager::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+// 0x00000066 System.Void RoomManager::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
 extern void RoomManager_OnSceneLoaded_m913468D79B41E00B21BB4EAC7E8414077F110A99 ();
-// 0x00000064 System.Void RoomManager::.ctor()
+// 0x00000067 System.Void RoomManager::.ctor()
 extern void RoomManager__ctor_mB80958CB1C8945EFECA6721A48CCD7FD4FD642C0 ();
-// 0x00000065 System.Void ItemInfo::.ctor()
+// 0x00000068 System.Void ItemInfo::.ctor()
 extern void ItemInfo__ctor_m66ACDC755231A926E5EE4BF678B1AC607C465B26 ();
-// 0x00000066 System.Void Readme::.ctor()
+// 0x00000069 System.Void Readme::.ctor()
 extern void Readme__ctor_mF465410C5B2E598F2685E82CFCE1F42186AFF448 ();
-// 0x00000067 System.Void Readme_Section::.ctor()
+// 0x0000006A System.Void Readme_Section::.ctor()
 extern void Section__ctor_mBAD5262A353BC071C61B8DB462A3D4D5AB5C7C4E ();
-// 0x00000068 System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
+// 0x0000006B System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
 extern void SimpleCameraController_OnEnable_m2BA1F31BEDE84695933E86CF731059D6FAC2111C ();
-// 0x00000069 UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
+// 0x0000006C UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
 extern void SimpleCameraController_GetInputTranslationDirection_m924AB4CEA66ADC4F1C63EAC21B660E0495765F4A ();
-// 0x0000006A System.Void UnityTemplateProjects.SimpleCameraController::Update()
+// 0x0000006D System.Void UnityTemplateProjects.SimpleCameraController::Update()
 extern void SimpleCameraController_Update_m0E587F33074BE72C54BA835B2217B0E8EC94F24A ();
-// 0x0000006B System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
+// 0x0000006E System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
 extern void SimpleCameraController__ctor_mC6AE2509DDF461856450EC7DE0058A1687AB5C87 ();
-// 0x0000006C System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
+// 0x0000006F System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
 extern void CameraState_SetFromTransform_mAF13C515CFB1085295C01A870D93375E98F16647 ();
-// 0x0000006D System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
+// 0x00000070 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
 extern void CameraState_Translate_mB8F7239BD9DB70190E59D47D75DD125AD9AF3A96 ();
-// 0x0000006E System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
+// 0x00000071 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
 extern void CameraState_LerpTowards_mF2D4B962A677B281ED2F539A2FFF8A693FB9A326 ();
-// 0x0000006F System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
+// 0x00000072 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
 extern void CameraState_UpdateTransform_mE653356FD34828D19ECB6793439A14C38F372410 ();
-// 0x00000070 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
+// 0x00000073 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
 extern void CameraState__ctor_m9C5338CABE70B8C73F8A4A08C1AFA1B33417DE9D ();
-static Il2CppMethodPointer s_methodPointers[112] = 
+static Il2CppMethodPointer s_methodPointers[115] = 
 {
 	NULL,
 	Gun__ctor_mAB78FE575637ED35491FD9880E4B35EB48689718,
@@ -313,10 +319,12 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	PlayerManager_Die_m1FDAE7B1320B80ED49DFF09BFE7ABEAD58EF96F2,
 	PlayerManager_GetKill_mFC41AC8FC54DC044D2D53C37145CBD0A26C7F691,
 	PlayerManager_RPC_GetKill_mF7AD24C2667F511613E7FF697DFDBC50108E4E3A,
+	PlayerManager_GetDeath_m08C36CF34DEEC4B1A32EC1E6B61C69735F353D19,
+	PlayerManager_RPC_GetDeath_mE5D12B30BDA0C8410CA8AF6F695B12FCED46BB99,
 	PlayerManager_Find_m567EFA82113ED596782AB4C6FE18FAB5101A2635,
 	PlayerManager__ctor_m4C7CA12A8243D6CA73C1EA65B361E7B717070471,
-	U3CU3Ec__DisplayClass9_0__ctor_mBC9065E5D5C8DAA9021B38F7EAE1C86D8875F71A,
-	U3CU3Ec__DisplayClass9_0_U3CFindU3Eb__0_m46909A62A5090013941E37326163B918B0ACC650,
+	U3CU3Ec__DisplayClass12_0__ctor_m47FBCAFD24070C0F96A3AC30D34FA179FF68C197,
+	U3CU3Ec__DisplayClass12_0_U3CFindU3Eb__0_m8DC7128C047BF57678C36C80EBEEAAA826AFB7A3,
 	PlayerNameManager_Start_m2AA2DF74FB001BE39657792413750DB1B329E4DB,
 	PlayerNameManager_OnUsernameInputValueChanged_m523FC413DF864D0193DA449132B3928055B69942,
 	PlayerNameManager__ctor_m588CA12751619F7A3E83A05292E82D0F64E5F8A9,
@@ -325,6 +333,7 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	Scoreboard_OnPlayerLeftRoom_m93349CD57C407B0944F9EC15D9CA40736505EA1C,
 	Scoreboard_AddScoreboardItem_m4882EA0DF65289AF08B1A5C058EAC469F3B88D3D,
 	Scoreboard_RemoveScoreboardItem_mB68BE0DBCF0BFDF74BCE89544211762800D92DA3,
+	Scoreboard_Update_m15E4A86E99BE3A15B529D5DB8EA1A59CAF5408A1,
 	Scoreboard__ctor_m51F4AFB7555F238836C11A836C24A3584D10371C,
 	ScoreboardItem_Initialize_m162C86B07D69697AD415FE0802DC55E100783110,
 	ScoreboardItem_UpdateStats_m20B273D1AF14C83B400C2C46CA46764AD31E4429,
@@ -355,7 +364,7 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	CameraState_UpdateTransform_mE653356FD34828D19ECB6793439A14C38F372410,
 	CameraState__ctor_m9C5338CABE70B8C73F8A4A08C1AFA1B33417DE9D,
 };
-static const int32_t s_InvokerIndices[112] = 
+static const int32_t s_InvokerIndices[115] = 
 {
 	23,
 	23,
@@ -428,6 +437,8 @@ static const int32_t s_InvokerIndices[112] =
 	23,
 	23,
 	23,
+	23,
+	23,
 	0,
 	23,
 	23,
@@ -440,6 +451,7 @@ static const int32_t s_InvokerIndices[112] =
 	26,
 	26,
 	26,
+	23,
 	23,
 	26,
 	23,
@@ -474,7 +486,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	112,
+	115,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

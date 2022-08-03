@@ -527,6 +527,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CanvasGroup",
+            "fullManagedTypeName": "UnityEngine.CanvasGroup",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Terrain",
             "fullManagedTypeName": "UnityEngine.Terrain",
             "moduleName": "Terrain",
